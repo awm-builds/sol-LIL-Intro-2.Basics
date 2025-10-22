@@ -8,32 +8,14 @@ pragma solidity >=0.8.2 <0.9.0;
 
 // your firt contract
 contract SimpleContract {
-    // string
-    string name = "drew";
+// ether gwei wei
+bool isEqual = (1 ether == 1e18 wei);
 
-    // integers
-    uint storedata = 34;
+/* seconds, mins, hrs, days wks, yrs 
+*Are all reserved words* */
+// time units
+bool isTime = (1 hours == 60 minutes);
 
-    // boolean
-    bool trueFalselValue = false;
-
-    // address w/ no-format address ex.
-    address walletAddress = 0x8Fu7aV3eg7Wp;
-
-    // arrays
-    string[] names;
-
-    // Struct define (Like a class model/object or constructer w/o run restrictions)
-    struct User {
-        string firstName;
-        string lastName;
-        uint age;
-    }
-
-    // enums (Like a struct without values)
-    enum userType {buyer, seller}
-
-    // mappings (a function that maps multiple things like Js)
-    mapping(address => unit) public balances;
+// 
 
 }
