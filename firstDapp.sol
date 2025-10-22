@@ -8,22 +8,32 @@ pragma solidity >=0.8.2 <0.9.0;
 
 // your firt contract
 contract SimpleContract {
-    // state variables
-    uint storeData;
+    // string
+    string name = "drew";
 
-    // modifiers is a conditional
-    modifier onlyData () {
-        require(
-            storeData >= 0);
-            _;
+    // integers
+    uint storedata = 34;
+
+    // boolean
+    bool trueFalselValue = false;
+
+    // address w/ no-format address ex.
+    address walletAddress = 0x8Fu7aV3eg7Wp;
+
+    // arrays
+    string[] names;
+
+    // Struct define (Like a class model/object or constructer w/o run restrictions)
+    struct User {
+        string firstName;
+        string lastName;
+        uint age;
     }
 
-    // function
-    function set(uint x) public {
-        storeData = x;
-    }
+    // enums (Like a struct without values)
+    enum userType {buyer, seller}
 
-    // event
-    event Sent(address from, address to , uint storeData);
+    // mappings (a function that maps multiple things like Js)
+    mapping(address => unit) public balances;
 
 }
